@@ -1,5 +1,7 @@
 # opencv-raspberrypi
 
+![opencv-raspberrypi](https://i.ibb.co/n6PQvVF/opencv-raspberrypi.png)
+
 Precompiled **OpenCV 4.5.2** binaries for **Raspberry Pi 3 & 4**.
 
 ## Supported features
