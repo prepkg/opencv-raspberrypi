@@ -42,19 +42,21 @@ Tested on Raspberry Pi 4 Model B (8 GB).
 
 Debian package contains the following shared libraries:
 
-* libopencv_calib3d.so
-* libopencv_core.so
-* libopencv_dnn.so
-* libopencv_features2d.so
-* libopencv_flann.so
-* libopencv_gapi.so
-* libopencv_highgui.so
-* libopencv_imgcodecs.so
-* libopencv_imgproc.so
-* libopencv_ml.so
-* libopencv_objdetect.so
-* libopencv_photo.so
-* libopencv_stitching.so
-* libopencv_video.so
-* libopencv_videoio.so
-* libtbb.so
+| Library                     | Description                                              |
+| :-------------------------  | :------------------------------------------------------- |
+| libopencv_calib3d.so        | Camera calibration and 3D reconstruction                 |
+| libopencv_core.so           | The Core Functionality                                   |
+| libopencv_dnn.so            | Deep Neural Networks                                     |
+| libopencv_features2d.so     | 2D Features framework                                    |
+| libopencv_flann.so          | Feature Matching with FLANN                              |
+| libopencv_gapi.so           | Graph API                                                |
+| libopencv_highgui.so        | High Level GUI and Media                                 |
+| libopencv_imgcodecs.so      | Image Input and Output                                   |
+| libopencv_imgproc.so        | Image Processing                                         |
+| libopencv_ml.so             | Machine Learning                                         |
+| libopencv_objdetect.so      | Object Detection                                         |
+| libopencv_photo.so          | Computational photography                                |
+| libopencv_stitching.so      | Images stitching                                         |
+| libopencv_video.so          | Video analysis                                           |
+| libopencv_videoio.so        | Video Input and Output                                   |
+| libtbb.so                   | TBB (Threading Building Blocks)                          |
