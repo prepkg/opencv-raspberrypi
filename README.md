@@ -61,3 +61,7 @@ Debian package contains the following shared libraries:
 | libopencv_video.so          | Video analysis                                           |
 | libopencv_videoio.so        | Video Input and Output                                   |
 | libtbb.so                   | TBB (Threading Building Blocks)                          |
+
+## Reference
+
+1. [OpenCV repository](https://github.com/opencv/opencv)
