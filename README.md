@@ -8,7 +8,7 @@ Read the following [blog post](https://lindevs.com/install-precompiled-opencv-on
 ## Supported features
 
 * NEON optimization
-* VFPV3 optimization
+* VFPv3 optimization
 * TBB library
 * FFmpeg library
 * GStreamer library
