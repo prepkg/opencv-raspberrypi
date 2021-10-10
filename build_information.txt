@@ -1,9 +1,9 @@
-General configuration for OpenCV 4.5.3 =====================================
+General configuration for OpenCV 4.5.4 =====================================
   Version control:               unknown
 
   Platform:
-    Timestamp:                   2021-07-10T01:39:47Z
-    Host:                        Linux 5.4.0-77-generic x86_64
+    Timestamp:                   2021-10-10T16:23:11Z
+    Host:                        Linux 5.4.0-72-generic x86_64
     Target:                      Linux armv7
     CMake:                       3.16.3
     CMake generator:             Unix Makefiles
@@ -40,7 +40,7 @@ General configuration for OpenCV 4.5.3 =====================================
     Documentation:               NO
     Non-free algorithms:         NO
 
-  GUI:
+  GUI:                           NONE
     GTK+:                        NO
 
   Media I/O:
@@ -86,7 +86,7 @@ General configuration for OpenCV 4.5.3 =====================================
     install path:                lib/python2.7/dist-packages/cv2/python-2.7
 
   Python 3:
-    Interpreter:                 /usr/bin/python3 (ver 3.7.11)
+    Interpreter:                 /usr/bin/python3 (ver 3.7.12)
     Libraries:                   /opt/pi/rootfs/usr/lib/arm-linux-gnueabihf/libpython3.7m.so (ver 3.7.3)
     numpy:                       /opt/pi/rootfs/usr/lib/python3/dist-packages/numpy/core/include (ver undefined - cannot be probed because of the cross-compilation)
     install path:                lib/python3.7/dist-packages/cv2/python-3.7
