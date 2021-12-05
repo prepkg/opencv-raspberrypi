@@ -12,7 +12,7 @@ Read the following [blog post](https://lindevs.com/install-precompiled-opencv-on
 * TBB library
 * FFmpeg library
 * GStreamer library
-* Python 2 and Python 3 bindings
+* Python 3 bindings
 
 You can read detailed build information [here](build_information.txt).
 
@@ -28,23 +28,30 @@ Tested on Raspberry Pi 4 Model B (8 GB).
 
 ### Supported OS
 
-* Raspberry Pi OS Buster (32-bit)
+* Raspberry Pi OS Bullseye (32-bit)
 
 ## Install
 
-* `wget https://github.com/prepkg/opencv-raspberrypi/releases/latest/download/opencv.deb`
-* `sudo apt install -y ./opencv.deb`
+```shell
+wget https://github.com/prepkg/opencv-raspberrypi/releases/latest/download/opencv.deb
+```
+
+```shell
+sudo apt install -y ./opencv.deb
+```
 
 ## Uninstall
 
-* `sudo apt purge --autoremove -y opencv`
+```shell
+sudo apt purge --autoremove -y opencv
+```
 
 ## Debian Package
 
 Debian package contains the following shared libraries:
 
 | Library                     | Description                                              |
-| :-------------------------  | :------------------------------------------------------- |
+|:----------------------------|:---------------------------------------------------------|
 | libopencv_calib3d.so        | Camera calibration and 3D reconstruction                 |
 | libopencv_core.so           | The Core Functionality                                   |
 | libopencv_dnn.so            | Deep Neural Networks                                     |
