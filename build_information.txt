@@ -1,9 +1,9 @@
-General configuration for OpenCV 4.5.4 =====================================
+General configuration for OpenCV 4.5.5 =====================================
   Version control:               unknown
 
   Platform:
-    Timestamp:                   2021-12-05T16:53:16Z
-    Host:                        Linux 5.4.0-90-generic x86_64
+    Timestamp:                   2021-12-29T02:55:35Z
+    Host:                        Linux 5.4.0-91-generic x86_64
     Target:                      Linux armv7
     CMake:                       3.16.3
     CMake generator:             Unix Makefiles
@@ -18,7 +18,7 @@ General configuration for OpenCV 4.5.4 =====================================
   C/C++:
     Built as dynamic libs?:      YES
     C++ standard:                11
-    C++ Compiler:                /opt/cross-pi-gcc/bin/arm-linux-gnueabihf-g++  (ver 10.2.0)
+    C++ Compiler:                /opt/cross-pi-gcc/bin/arm-linux-gnueabihf-g++  (ver 10.3.1)
     C++ flags (Release):         -fPIC  -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/usr/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/arm-linux-gnueabihf/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/arm-linux-gnueabihf/lib -fPIC  -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/usr/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/arm-linux-gnueabihf/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/arm-linux-gnueabihf/lib -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/usr/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/arm-linux-gnueabihf/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/arm-linux-gnueabihf/lib   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -O3 -DNDEBUG  -DNDEBUG
     C++ flags (Debug):           -fPIC  -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/usr/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/arm-linux-gnueabihf/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/arm-linux-gnueabihf/lib -fPIC  -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/usr/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/arm-linux-gnueabihf/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/arm-linux-gnueabihf/lib -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/usr/lib/arm-linux-gnueabihf -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/arm-linux-gnueabihf -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/arm-linux-gnueabihf/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/arm-linux-gnueabihf/lib   -fsigned-char -W -Wall -Werror=return-type -Werror=non-virtual-dtor -Werror=address -Werror=sequence-point -Wformat -Werror=format-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections  -mfpu=neon -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG
     C Compiler:                  /opt/cross-pi-gcc/bin/arm-linux-gnueabihf-gcc
@@ -45,7 +45,7 @@ General configuration for OpenCV 4.5.4 =====================================
 
   Media I/O:
     ZLib:                        /opt/pi/rootfs/usr/lib/arm-linux-gnueabihf/libz.so (ver 1.2.11)
-    JPEG:                        libjpeg-turbo (ver 2.1.0-62)
+    JPEG:                        libjpeg-turbo (ver 2.1.2-62)
     WEBP:                        build (ver encoder: 0x020f)
     PNG:                         /opt/pi/rootfs/usr/lib/arm-linux-gnueabihf/libpng.so (ver 1.6.37)
     TIFF:                        build (ver 42 - 4.2.0)
@@ -73,7 +73,7 @@ General configuration for OpenCV 4.5.4 =====================================
   Other third-party libraries:
     Lapack:                      NO
     Custom HAL:                  YES (carotene (ver 0.0.1))
-    Protobuf:                    build (3.5.1)
+    Protobuf:                    build (3.19.1)
 
   OpenCL:                        YES (no extra features)
     Include path:                /home/pi/opencv-src/3rdparty/include/opencl/1.2
