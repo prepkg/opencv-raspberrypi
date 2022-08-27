@@ -38,6 +38,10 @@ Tested on Raspberry Pi 4 Model B (8 GB).
 wget https://github.com/prepkg/opencv-raspberrypi/releases/latest/download/opencv.deb
 ```
 
+```shell
+sudo apt install -y ./opencv.deb
+```
+
 * 64-bit:
 
 ```shell
@@ -45,7 +49,7 @@ wget https://github.com/prepkg/opencv-raspberrypi/releases/latest/download/openc
 ```
 
 ```shell
-sudo apt install -y ./opencv.deb
+sudo apt install -y ./opencv_64.deb
 ```
 
 ## Uninstall
