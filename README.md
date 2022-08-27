@@ -14,7 +14,7 @@ Read the following [blog post](https://lindevs.com/install-precompiled-opencv-on
 * GStreamer library
 * Python 3 bindings
 
-You can read detailed build information [here](build_information.txt).
+You can read detailed build information [32-bit](build_information.txt) or [64-bit](build_information_64.txt).
 
 ## Prerequisites
 
@@ -28,12 +28,20 @@ Tested on Raspberry Pi 4 Model B (8 GB).
 
 ### Supported OS
 
-* Raspberry Pi OS Bullseye (32-bit)
+* Raspberry Pi OS Bullseye (32-bit and 64-bit)
 
 ## Install
 
+* 32-bit:
+
 ```shell
 wget https://github.com/prepkg/opencv-raspberrypi/releases/latest/download/opencv.deb
+```
+
+* 64-bit:
+
+```shell
+wget https://github.com/prepkg/opencv-raspberrypi/releases/latest/download/opencv_64.deb
 ```
 
 ```shell

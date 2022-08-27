@@ -1,0 +1,91 @@
+General configuration for OpenCV 4.6.0 =====================================
+  Version control:               unknown
+
+  Platform:
+    Timestamp:                   2022-08-27T13:23:27Z
+    Host:                        Linux 5.15.0-43-generic x86_64
+    Target:                      Linux aarch64
+    CMake:                       3.22.1
+    CMake generator:             Unix Makefiles
+    CMake build tool:            /usr/bin/gmake
+    Configuration:               RELEASE
+
+  CPU/HW features:
+    Baseline:                    NEON FP16
+      required:                  NEON
+      disabled:                  VFPV3
+
+  C/C++:
+    Built as dynamic libs?:      YES
+    C++ standard:                11
+    C++ Compiler:                /opt/cross-pi-gcc/bin/aarch64-linux-gnu-g++  (ver 10.3.1)
+    C++ flags (Release):         -fPIC  -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -L/opt/pi/rootfs/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -fPIC  -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -L/opt/pi/rootfs/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -L/opt/pi/rootfs/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/aarch64-linux-gnu/lib   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -O3 -DNDEBUG  -DNDEBUG
+    C++ flags (Debug):           -fPIC  -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -L/opt/pi/rootfs/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -fPIC  -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -L/opt/pi/rootfs/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -L/opt/pi/rootfs/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/aarch64-linux-gnu/lib   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wsuggest-override -Wno-delete-non-virtual-dtor -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -fvisibility-inlines-hidden -g  -O0 -DDEBUG -D_DEBUG
+    C Compiler:                  /opt/cross-pi-gcc/bin/aarch64-linux-gnu-gcc
+    C flags (Release):           -fPIC  -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -L/opt/pi/rootfs/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -fPIC  -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -L/opt/pi/rootfs/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -L/opt/pi/rootfs/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/aarch64-linux-gnu/lib   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -O3 -DNDEBUG  -DNDEBUG
+    C flags (Debug):             -fPIC  -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -L/opt/pi/rootfs/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -fPIC  -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -L/opt/pi/rootfs/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -L/opt/pi/rootfs/opt/vc/lib -Wl,-rpath-link,/opt/pi/rootfs/opt/vc/lib -L/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib/aarch64-linux-gnu -L/opt/pi/rootfs/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -Wl,-rpath-link,/opt/pi/rootfs/usr/lib/aarch64-linux-gnu -L/opt/pi/rootfs/usr/local/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/local/lib -L/opt/pi/rootfs/lib -Wl,-rpath-link,/opt/pi/rootfs/lib -L/opt/pi/rootfs/usr/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/lib -L/opt/pi/rootfs/usr/aarch64-linux-gnu/lib -Wl,-rpath-link,/opt/pi/rootfs/usr/aarch64-linux-gnu/lib   -fsigned-char -W -Wall -Wreturn-type -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wuninitialized -Wno-comment -Wimplicit-fallthrough=3 -Wno-strict-overflow -fdiagnostics-show-option -pthread -fomit-frame-pointer -ffunction-sections -fdata-sections    -fvisibility=hidden -g  -O0 -DDEBUG -D_DEBUG
+    Linker flags (Release):      -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined
+    Linker flags (Debug):        -Wl,--gc-sections -Wl,--as-needed -Wl,--no-undefined
+    ccache:                      NO
+    Precompiled headers:         NO
+    Extra dependencies:          dl m pthread rt
+    3rdparty dependencies:
+
+  OpenCV modules:
+    To be built:                 calib3d core dnn features2d flann gapi highgui imgcodecs imgproc ml objdetect photo python3 stitching ts video videoio
+    Disabled:                    world
+    Disabled by dependency:      -
+    Unavailable:                 java python2
+    Applications:                perf_tests apps
+    Documentation:               NO
+    Non-free algorithms:         NO
+
+  GUI:                           NONE
+    GTK+:                        NO
+
+  Media I/O:
+    ZLib:                        /opt/pi/rootfs/usr/lib/aarch64-linux-gnu/libz.so (ver 1.2.11)
+    JPEG:                        libjpeg-turbo (ver 2.1.2-62)
+    WEBP:                        build (ver encoder: 0x020f)
+    PNG:                         /opt/pi/rootfs/usr/lib/aarch64-linux-gnu/libpng.so (ver 1.6.37)
+    TIFF:                        build (ver 42 - 4.2.0)
+    JPEG 2000:                   build (ver 2.4.0)
+    HDR:                         YES
+    SUNRASTER:                   YES
+    PXM:                         YES
+    PFM:                         YES
+
+  Video I/O:
+    DC1394:                      NO
+    FFMPEG:                      YES
+      avcodec:                   YES (58.91.100)
+      avformat:                  YES (58.45.100)
+      avutil:                    YES (56.51.100)
+      swscale:                   YES (5.7.100)
+      avresample:                YES (4.0.0)
+    GStreamer:                   YES (1.18.4)
+    v4l/v4l2:                    YES (linux/videodev2.h)
+
+  Parallel framework:            TBB (ver 2020.2 interface 11102)
+
+  Trace:                         YES (with Intel ITT)
+
+  Other third-party libraries:
+    Lapack:                      NO
+    Custom HAL:                  YES (carotene (ver 0.0.1))
+    Protobuf:                    build (3.19.1)
+
+  OpenCL:                        YES (no extra features)
+    Include path:                /home/pi/opencv-src/3rdparty/include/opencl/1.2
+    Link libraries:              Dynamic load
+
+  Python 3:
+    Interpreter:                 /opt/pi/rootfs/usr/local/bin/aarch64-linux-gnu-python3 (ver 3.9.2)
+    Libraries:                   /opt/pi/rootfs/usr/lib/aarch64-linux-gnu/libpython3.9.so (ver 3.9.2)
+    numpy:                       /opt/pi/rootfs/usr/lib/python3/dist-packages/numpy/core/include (ver undefined - cannot be probed because of the cross-compilation)
+    install path:                lib/python3.9/dist-packages/cv2/python-3.9
+
+  Python (for build):            /opt/pi/rootfs/usr/local/bin/aarch64-linux-gnu-python3
+
+  Install to:                    /home/pi/opencv/usr/local
+-----------------------------------------------------------------
