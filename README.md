@@ -2,7 +2,7 @@
 
 ![opencv-raspberrypi](https://i.ibb.co/n6PQvVF/opencv-raspberrypi.png)
 
-Precompiled **OpenCV 4.7.0** binaries for **Raspberry Pi 3 & 4**. 
+Precompiled **OpenCV 4.8.0** binaries for **Raspberry Pi 3 & 4**. 
 Read the following [blog post](https://lindevs.com/install-precompiled-opencv-on-raspberry-pi) for additional information.
 
 ## Supported features

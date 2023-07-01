@@ -1,9 +1,9 @@
-General configuration for OpenCV 4.7.0 =====================================
+General configuration for OpenCV 4.8.0 =====================================
   Version control:               unknown
 
   Platform:
-    Timestamp:                   2023-01-01T10:36:47Z
-    Host:                        Linux 5.15.0-43-generic x86_64
+    Timestamp:                   2023-07-01T08:25:57Z
+    Host:                        Linux 5.15.0-67-generic x86_64
     Target:                      Linux armv7
     CMake:                       3.22.1
     CMake generator:             Unix Makefiles
@@ -49,7 +49,7 @@ General configuration for OpenCV 4.7.0 =====================================
     WEBP:                        build (ver encoder: 0x020f)
     PNG:                         /opt/pi/rootfs/usr/lib/arm-linux-gnueabihf/libpng.so (ver 1.6.37)
     TIFF:                        build (ver 42 - 4.2.0)
-    JPEG 2000:                   build (ver 2.4.0)
+    JPEG 2000:                   build (ver 2.5.0)
     HDR:                         YES
     SUNRASTER:                   YES
     PXM:                         YES
@@ -74,6 +74,7 @@ General configuration for OpenCV 4.7.0 =====================================
     Lapack:                      NO
     Custom HAL:                  YES (carotene (ver 0.0.1))
     Protobuf:                    build (3.19.1)
+    Flatbuffers:                 builtin/3rdparty (23.5.9)
 
   OpenCL:                        YES (no extra features)
     Include path:                /home/pi/opencv-src/3rdparty/include/opencl/1.2
