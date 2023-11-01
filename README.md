@@ -2,7 +2,7 @@
 
 ![opencv-raspberrypi](https://i.ibb.co/n6PQvVF/opencv-raspberrypi.png)
 
-Precompiled **OpenCV 4.8.0** binaries for **Raspberry Pi 3 & 4**. 
+Precompiled **OpenCV 4.8.1** binaries for **Raspberry Pi 3 & 4**. 
 Read the following [blog post](https://lindevs.com/install-precompiled-opencv-on-raspberry-pi) for additional information.
 
 ## Supported features
@@ -14,7 +14,7 @@ Read the following [blog post](https://lindevs.com/install-precompiled-opencv-on
 * GStreamer library
 * Python 3 bindings
 
-You can read detailed build information [32-bit](build_information.txt) or [64-bit](build_information_64.txt).
+You can read detailed [build information](build_information_64.txt).
 
 ## Prerequisites
 
@@ -28,21 +28,9 @@ Tested on Raspberry Pi 4 Model B (8 GB).
 
 ### Supported OS
 
-* Raspberry Pi OS Bullseye (32-bit and 64-bit)
+* Raspberry Pi OS Bookworm 64-bit
 
 ## Install
-
-* 32-bit:
-
-```shell
-wget https://github.com/prepkg/opencv-raspberrypi/releases/latest/download/opencv.deb
-```
-
-```shell
-sudo apt install -y ./opencv.deb
-```
-
-* 64-bit:
 
 ```shell
 wget https://github.com/prepkg/opencv-raspberrypi/releases/latest/download/opencv_64.deb
