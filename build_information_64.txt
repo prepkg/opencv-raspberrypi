@@ -1,13 +1,13 @@
-General configuration for OpenCV 4.9.0 =====================================
+General configuration for OpenCV 4.10.0 =====================================
   Version control:               unknown
 
   Platform:
-    Timestamp:                   2024-01-01T15:48:31Z
-    Host:                        Linux 5.15.0-84-generic x86_64
+    Timestamp:                   2024-06-09T07:18:06Z
+    Host:                        Linux 6.8.0-31-generic x86_64
     Target:                      Linux aarch64
-    CMake:                       3.22.1
-    CMake generator:             Unix Makefiles
-    CMake build tool:            /usr/bin/gmake
+    CMake:                       3.28.3
+    CMake generator:             Ninja
+    CMake build tool:            /usr/bin/ninja
     Configuration:               RELEASE
 
   CPU/HW features:
@@ -49,11 +49,13 @@ General configuration for OpenCV 4.9.0 =====================================
     GTK+:                        NO
 
   Media I/O:
-    ZLib:                        /opt/pi/rootfs/usr/lib/aarch64-linux-gnu/libz.a (ver 1.2.13)
-    JPEG:                        libjpeg-turbo (ver 2.1.3-62)
+    ZLib-Ng:                     build (zlib ver 1.3.0, zlib-ng ver 2.1.6)
+    JPEG:                        build-libjpeg-turbo (ver 3.0.3-70)
+      SIMD Support Request:      YES
+      SIMD Support:              YES
     WEBP:                        build (ver encoder: 0x020f)
-    PNG:                         build (ver 1.6.37)
-    TIFF:                        build (ver 42 - 4.2.0)
+    PNG:                         build (ver 1.6.43)
+    TIFF:                        build (ver 42 - 4.6.0)
     JPEG 2000:                   build (ver 2.5.0)
     HDR:                         YES
     SUNRASTER:                   YES
@@ -71,7 +73,7 @@ General configuration for OpenCV 4.9.0 =====================================
     GStreamer:                   YES (1.22.0)
     v4l/v4l2:                    YES (linux/videodev2.h)
 
-  Parallel framework:            TBB (ver 2020.2 interface 11102)
+  Parallel framework:            TBB (ver 2021.11 interface 12110)
 
   Trace:                         YES (with Intel ITT)
 
@@ -87,7 +89,8 @@ General configuration for OpenCV 4.9.0 =====================================
 
   Python 3:
     Interpreter:                 /opt/pi/rootfs/usr/local/bin/aarch64-linux-gnu-python3 (ver 3.11.2)
-    Libraries:                   /opt/pi/rootfs/usr/lib/aarch64-linux-gnu/libpython3.11.so
+    Libraries:                   /opt/pi/rootfs/usr/lib/aarch64-linux-gnu/libpython3.11.so (ver 3.11.2)
+    Limited API:                 NO
     numpy:                       /opt/pi/rootfs/usr/lib/python3/dist-packages/numpy/core/include (ver undefined - cannot be probed because of the cross-compilation)
     install path:                lib/python3.11/dist-packages/cv2/python-3.11
 
