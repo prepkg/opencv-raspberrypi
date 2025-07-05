@@ -1,8 +1,8 @@
-General configuration for OpenCV 4.11.0 =====================================
+General configuration for OpenCV 4.12.0 =====================================
   Version control:               unknown
 
   Platform:
-    Timestamp:                   2025-01-11T14:15:22Z
+    Timestamp:                   2025-07-05T12:10:46Z
     Host:                        Linux 6.8.0-31-generic x86_64
     Target:                      Linux aarch64
     CMake:                       3.28.3
@@ -18,7 +18,7 @@ General configuration for OpenCV 4.11.0 =====================================
       disabled:                  VFPV3
     Dispatched code generation:  NEON_DOTPROD NEON_FP16 NEON_BF16
       requested:                 NEON_FP16 NEON_BF16 NEON_DOTPROD
-      NEON_DOTPROD (1 files):    + NEON_DOTPROD
+      NEON_DOTPROD (2 files):    + NEON_DOTPROD
       NEON_FP16 (2 files):       + NEON_FP16
       NEON_BF16 (0 files):       + NEON_BF16
 
@@ -52,15 +52,15 @@ General configuration for OpenCV 4.11.0 =====================================
 
   Media I/O:
     ZLib-Ng:                     build (zlib ver 1.3.1, zlib-ng ver 2.2.1)
-    JPEG:                        build-libjpeg-turbo (ver 3.0.3-70)
+    JPEG:                        build-libjpeg-turbo (ver 3.1.0-70)
       SIMD Support Request:      YES
       SIMD Support:              YES
     WEBP:                        build (ver decoder: 0x0209, encoder: 0x020f, demux: 0x0107)
     AVIF:                        NO
     PNG:                         build (ver 1.6.43)
     TIFF:                        build (ver 42 - 4.6.0)
-    JPEG 2000:                   build (ver 2.5.0)
-    GIF:                         NO
+    JPEG 2000:                   build (ver 2.5.3)
+    GIF:                         YES
     HDR:                         YES
     SUNRASTER:                   YES
     PXM:                         YES
@@ -76,9 +76,9 @@ General configuration for OpenCV 4.11.0 =====================================
     GStreamer:                   YES (1.22.0)
     v4l/v4l2:                    YES (linux/videodev2.h)
 
-  Parallel framework:            TBB (ver 2021.11 interface 12110)
+  Parallel framework:            TBB (ver 2022.1 interface 12150)
 
-  Trace:                         YES (with Intel ITT)
+  Trace:                         YES (with Intel ITT(3.25.4))
 
   Other third-party libraries:
     Lapack:                      NO
