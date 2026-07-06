@@ -1,0 +1,37 @@
+name: Linux
+
+on:
+  schedule:
+    - cron: '0 0 * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Get the latest version
+        run: |
+          VERSION=$(basename $(curl -sILo /dev/null -w '%{url_effective}' https://github.com/opencv/opencv/releases/latest))
+          ARTIFACT=$(GH_TOKEN=${{ github.token }} gh release view $VERSION -R ${{ github.repository }} | grep -om1 linux || true)
+          printf "VERSION=$VERSION\nARTIFACT=$ARTIFACT\n" >> $GITHUB_ENV
+      - name: Clone the repository
+        if: env.ARTIFACT == ''
+        uses: actions/checkout@v7
+      - name: Build the Docker image
+        if: env.ARTIFACT == ''
+        run: ./setup.sh build-image
+      - name: Build the library
+        if: env.ARTIFACT == ''
+        run: ./setup.sh build-lib
+      - name: Test the library
+        if: env.ARTIFACT == ''
+        run: ./setup.sh test-lib
+      - name: Publish the release
+        if: env.ARTIFACT == ''
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ env.VERSION }}
+          body: "[Release notes](https://github.com/opencv/opencv/releases/tag/${{ env.VERSION }})"
+          files: ./build/*

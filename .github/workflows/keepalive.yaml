@@ -1,0 +1,29 @@
+name: Keepalive
+
+on:
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  keepalive:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v7
+      - name: Push keepalive commit if inactive
+        run: |
+          set -eo pipefail
+
+          LAST_COMMIT_DATE=$(git log -1 --format="%ct")
+          CURRENT_DATE=$(date "+%s")
+          DAYS_AGO=$(( (CURRENT_DATE - LAST_COMMIT_DATE) / 86400 ))
+
+          echo "Last commit was $DAYS_AGO days ago"
+
+          if [ "$DAYS_AGO" -gt 50 ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git commit --allow-empty -m "keepalive"
+            git push
+          fi

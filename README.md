@@ -1,74 +1,76 @@
 # opencv-raspberrypi
 
-![opencv-raspberrypi](https://i.ibb.co/n6PQvVF/opencv-raspberrypi.png)
+[![GitHub Release](https://img.shields.io/github/v/release/prepkg/opencv-raspberrypi)](https://github.com/prepkg/opencv-raspberrypi/releases/latest)
+[![License](https://img.shields.io/github/license/prepkg/opencv-raspberrypi)](https://github.com/prepkg/opencv-raspberrypi/blob/master/LICENSE)
+[![Downloads](https://img.shields.io/github/downloads/prepkg/opencv-raspberrypi/total)](https://github.com/prepkg/opencv-raspberrypi/releases)
+[![Linux](https://github.com/prepkg/opencv-raspberrypi/actions/workflows/linux.yaml/badge.svg)](https://github.com/prepkg/opencv-raspberrypi/actions/workflows/linux.yaml)
 
-Precompiled **OpenCV 4.12.0** binaries for **Raspberry Pi 3 & 4**. 
-Read the following [blog post](https://lindevs.com/install-precompiled-opencv-on-raspberry-pi) for additional information.
+> 🚀️ Always up-to-date [OpenCV](https://github.com/opencv/opencv) binaries for Raspberry Pi - just download and use it.
 
-## Supported features
+> ⭐ If you find this repository useful, please consider giving it a star.
 
-* NEON optimization
-* VFPv3 optimization
-* TBB library
-* FFmpeg library
-* GStreamer library
-* Python 3 bindings
+OpenCV binaries are compiled with the [GCC Toolchain](https://github.com/prepkg/gcc-toolchain) targeting older glibc
+versions, ensuring compatibility across a wide range of Raspberry Pi boards running Raspberry Pi OS 64-bit. GitHub CI
+workflows are used to automate the build process: pipelines run daily, but new builds are triggered only when a new
+OpenCV release is available.
 
-You can read detailed [build information](build_information_64.txt).
+## Why?
 
-## Prerequisites
+* **No official OpenCV packages.** There are no prebuilt official OpenCV packages for Raspberry Pi OS, forcing users
+  to compile it from source themselves.
+* **Slow compilation on Raspberry Pi.** Building OpenCV directly on a Raspberry Pi can take hours and often runs into
+  the limited RAM available on the device.
+* **Always up to date.** GitHub CI workflows rebuild and publish OpenCV automatically whenever a new version is released
+  upstream.
+* **No extra dependencies.** The required libraries are statically linked, so the OpenCV binaries only depend on the
+  base system libraries already present on Raspberry Pi OS.
 
-### Supported Boards
+## Build Information
 
-* Raspberry Pi 3 Model A+
-* Raspberry Pi 3 Model B+
-* Raspberry Pi 4 Model B
+* Dynamically linked with an older glibc version. For details, see the [GCC Toolchain](https://github.com/prepkg/gcc-toolchain).
+* Statically linked with libstdc++, libgcc, and OpenBLAS.
 
-Tested on Raspberry Pi 4 Model B (8 GB).
+## Precompiled Binaries
 
-### Supported OS
-
-* Raspberry Pi OS Bookworm 64-bit
-
-## Install
-
-```shell
-wget https://github.com/prepkg/opencv-raspberrypi/releases/latest/download/opencv_64.deb
-```
+If you prefer not to build the OpenCV yourself, a precompiled OpenCV can be downloaded from the [releases page](https://github.com/prepkg/opencv-raspberrypi/releases).
 
 ```shell
-sudo apt install -y ./opencv_64.deb
+curl -sSLo opencv.deb https://github.com/prepkg/opencv-raspberrypi/releases/latest/download/opencv-aarch64-linux-gnu.deb \
+  && sudo apt install -y ./opencv.deb \
+  && rm -rf opencv.deb
 ```
 
-## Uninstall
+## Compilation
+
+### Requirements
+
+* Git
+* Docker
+
+### Instructions
+
+* Clone the repository:
 
 ```shell
-sudo apt purge --autoremove -y opencv
+git clone https://github.com/prepkg/opencv-raspberrypi.git && cd opencv-raspberrypi
 ```
 
-## Debian Package
+* Build the Docker image:
 
-Debian package contains the following shared libraries:
+```shell
+./setup.sh build-image
+```
 
-| Library                     | Description                                              |
-|:----------------------------|:---------------------------------------------------------|
-| libopencv_calib3d.so        | Camera calibration and 3D reconstruction                 |
-| libopencv_core.so           | The Core Functionality                                   |
-| libopencv_dnn.so            | Deep Neural Networks                                     |
-| libopencv_features2d.so     | 2D Features framework                                    |
-| libopencv_flann.so          | Feature Matching with FLANN                              |
-| libopencv_gapi.so           | Graph API                                                |
-| libopencv_highgui.so        | High Level GUI and Media                                 |
-| libopencv_imgcodecs.so      | Image Input and Output                                   |
-| libopencv_imgproc.so        | Image Processing                                         |
-| libopencv_ml.so             | Machine Learning                                         |
-| libopencv_objdetect.so      | Object Detection                                         |
-| libopencv_photo.so          | Computational photography                                |
-| libopencv_stitching.so      | Images stitching                                         |
-| libopencv_video.so          | Video analysis                                           |
-| libopencv_videoio.so        | Video Input and Output                                   |
-| libtbb.so                   | TBB (Threading Building Blocks)                          |
+* Build the library:
 
-## Reference
+```shell
+./setup.sh build-lib
+```
 
-1. [OpenCV repository](https://github.com/opencv/opencv)
+After compilation, the `deb` package will be available in the `build` directory.
+
+* (Optional) Run the test to verify that the library links correctly and the resulting binary runs under QEMU:
+
+```shell
+./setup.sh test-lib
+```

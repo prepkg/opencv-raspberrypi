@@ -1,0 +1,44 @@
+<svg width="1280" height="640" viewBox="0 0 1280 640" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0d1117"/>
+      <stop offset="100%" stop-color="#161b22"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#128DFF" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#128DFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <rect width="1280" height="640" fill="url(#bg)"/>
+
+  <circle cx="260" cy="320" r="220" fill="url(#glow)"/>
+
+  <g transform="translate(130.4,190.4) scale(10.8)">
+    <path fill="#FF2A44" d="M11.8992.8525C8.735.8525 6.17 3.4175 6.17 6.5817c0 2.102 1.1321 3.9398 2.8198 4.9366l1.6412-2.7849c.0411-.0699.0176-.1593-.0495-.2048-.6233-.4227-1.0328-1.137-1.0328-1.947 0-1.298 1.0524-2.3504 2.3505-2.3504 1.2981 0 2.3505 1.0524 2.3505 2.3505 0 .8098-.4095 1.5242-1.0328 1.947-.0671.0454-.0907.1348-.0495.2047l1.6414 2.785c1.6878-.9969 2.8199-2.8346 2.8199-4.9367 0-3.1642-2.5653-5.7292-5.7295-5.7292z"/>
+    <path fill="#8BDA67" d="M5.7292 11.6891C2.565 11.6891 0 14.2541 0 17.4183c0 3.1642 2.565 5.7292 5.7292 5.7292 3.1798 0 5.8074-2.6995 5.7275-5.8762H8.2313c-.0847 0-.1513.0717-.1519.1564-.0082 1.266-1.0644 2.3411-2.3502 2.3411-1.2981 0-2.3505-1.0524-2.3505-2.3505 0-1.2982 1.0524-2.3505 2.3505-2.3505.34 0 .663.0724.9547.2022.0713.0318.1566.0077.1962-.0595l1.6464-2.7935c-.8273-.4636-1.7815-.7279-2.7973-.7279z"/>
+    <path fill="#128DFF" d="M21.1716 12.4505l-1.6366 2.7878c-.041.07-.0172.1594.05.2048.624.4217 1.0348 1.1354 1.0363 1.9452.0022 1.298-1.0483 2.352-2.3465 2.3542-1.298.0023-2.3523-1.0482-2.3545-2.3462-.0015-.8098.4068-1.5248 1.0294-1.9486.067-.0457.0905-.1353.0492-.2051l-1.6464-2.7818c-1.6859.9998-2.8146 2.8394-2.811 4.9415.0056 3.1641 2.575 5.7248 5.7393 5.7192 3.1641-.0054 5.7246-2.575 5.7192-5.7392-.0037-2.1022-1.139-3.938-2.8284-4.9318z"/>
+  </g>
+
+  <text x="480" y="250" font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif"
+        font-size="28" font-weight="600" letter-spacing="4" fill="#8b949e">PREPKG</text>
+
+  <text x="478" y="330" font-family="'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace"
+        font-size="92" font-weight="800" fill="#f0f6fc">OpenCV</text>
+
+  <text font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="30" fill="#8b949e">
+    <tspan x="480" y="392">Precompiled binaries for Raspberry Pi OS</tspan>
+    <tspan x="480" y="432">64-bit - always up to date</tspan>
+  </text>
+
+  <g font-family="-apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="24" font-weight="600">
+    <g>
+      <rect x="480" y="480" width="220" height="56" rx="28" fill="#21262d" stroke="#30363d"/>
+      <text x="590" y="516" text-anchor="middle" fill="#e6edf3">Raspberry Pi OS</text>
+    </g>
+    <g>
+      <rect x="716" y="480" width="150" height="56" rx="28" fill="#21262d" stroke="#30363d"/>
+      <text x="791" y="516" text-anchor="middle" fill="#e6edf3">aarch64</text>
+    </g>
+  </g>
+</svg>
